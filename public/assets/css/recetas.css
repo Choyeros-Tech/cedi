@@ -1,0 +1,64 @@
+*{
+    font-size: 18px;
+    color: #075007;
+}
+.logo{
+    color: blue !important;
+}
+.logo img{
+    padding: 1%;
+    width: 100%;
+}
+.textHeader{
+    text-align: center;
+}
+
+.textTitle{
+    font-weight: bold !important;
+    font-family: 'Pinyon Script', cursive;
+    
+}
+hr{
+    background-color: red;
+    width: 95%;
+}
+
+.rotate {
+    position: absolute;
+    left: -135px;
+    top: 450px;
+
+    transform: rotate(-90deg);
+    padding-top: 0;
+  
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  }
+
+  .recetaBody{
+      width: 100%;
+      background-color: rosybrown;
+  }
+.smalltext{
+    margin-top: -20px;
+}
+.textprescription{
+    margin-left: 5%;
+    font-size: 22px;
+}
