@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\prescriptions;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\DB;
@@ -14,6 +15,12 @@ class PrescriptionsController extends Controller
     {
         $prescriptions = prescriptions::orderBy('disease')->get();
         return view('prescriptions', compact('prescriptions'));
+    }
+
+    public function prescriptionsOnly()
+    {
+        $doctors = User::where('type', '=', 'doctor')->orderBy('name', 'desc')->get();
+        return view('prescriptiononly', compact('doctors'));
     }
 
     public function addPrescription(Request $request)

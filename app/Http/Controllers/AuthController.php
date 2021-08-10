@@ -28,6 +28,10 @@ class AuthController extends Controller
         $token = $tokenResult->token;
         $token->save();
 
+        if(Auth::user()->type == 'recetario'){
+            return redirect()->route('prescriptionsonly');
+        }
+
         return redirect()->route('reception');
         /*return response()->json([
             'user' => $user, 

@@ -63,6 +63,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('users', [AnalysisController::class, 'allUsers'])->name('users');
 
     Route::post('signup', [AuthController::class, 'signUp'])->name('signup');
+    Route::get('prescriptionsonly', [PrescriptionsController::class, 'prescriptionsOnly'])->name('prescriptionsonly');
 
 
     
@@ -93,6 +94,9 @@ Route::get('/sistema', function () {
 Route::get('/convert', [PDFController::class, 'test'])->name('convert');
 
 //'DocumentController@convertWordToPDF')->name('document.wordtopdf');
+Route::get('/pres', function () {
+    return view('pres');
+});
 
 
 

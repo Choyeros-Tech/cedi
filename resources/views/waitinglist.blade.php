@@ -65,6 +65,7 @@
                             <a href="{{route('prescriptions')}}" class="nav-link "><span class="pcoded-micon"><i
                                         class="fas fa-pills"></i></span><span class="pcoded-mtext">Mis Recetas</span></a>
                         </li>
+                        
                         <li class="nav-item pcoded-menu-caption">
                             <label>Estadtisticas</label>
                         </li>
