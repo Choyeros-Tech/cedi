@@ -62,7 +62,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('dataResulStud/{id}', [StudiesController::class, 'dataResulStud'])->name('dataResulStud');
     Route::get('users', [AnalysisController::class, 'allUsers'])->name('users');
 
-    Route::post('signup', [AuthController::class, 'signUp'])->name('signup');
+    //Route::post('signup', [AuthController::class, 'signUp'])->name('signup');
     Route::get('prescriptionsonly', [PrescriptionsController::class, 'prescriptionsOnly'])->name('prescriptionsonly');
 
 
@@ -73,7 +73,8 @@ Route::group(['middleware' => 'auth'], function() {
 Route::get('savePrescription/{id}', [PrescriptionsController::class, 'savePrescription'])->name('savePrescription');
 
 Route::get('/', function () {
-    return view('website/website');
+   // return view('website/website');
+   return view('login');
 });
 
 Route::get('/lab', function () {

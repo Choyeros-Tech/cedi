@@ -13,6 +13,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('addService', [ServicesController::class, 'store'])->name('addService');
 Route::post('addAnalysis', [AnalysisController::class, 'store'])->name('addAnalysis');
-//Route::post('signup', [AuthController::class, 'signUp'])->name('signup');
+Route::post('signup', [AuthController::class, 'signUp'])->name('signup');
 
 
